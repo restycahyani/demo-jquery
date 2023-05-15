@@ -9,24 +9,26 @@
     <link rel="stylesheet" href="asset/bootstrap-5.3.0-alpha3-dist/js/bootstrap.min.js" />
     <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
   </head>
-  <body>
-    <div class="container my-5">
-      <div class="alert alert-primary text-center" role="alert"><a class="alert-link">Nama Anggota Kelompok:</a> Faishal Fariz Hidaytullah | Resty Cahyani Pradita</div>
-      <h1 class="mb-4">Form A</h1>
-      <form id="myForm" method="post">
-        <div class="mb-3">
-          <label for="numberInput" class="form-label">Jumlah elemen array:</label>
-          <input type="number" class="form-control" placeholder="Masukkan jumlah elemen array" id="numberInput" name="numberInput" min="1" required />
-        </div>
-        <div class="mb-3">
-          <label for="textInput" class="form-label">Teks:</label>
-          <input type="text" class="form-control" placeholder="Masukkan teks" id="textInput" name="textInput" required />
-        </div>
-        <div class="d-grid gap-2">
-          <button type="submit" class="btn btn-primary">Kirim</button>
-        </div>
-      </form>
-      <div id="tableContainer"></div>
+  <body class="bg-primary-subtle bg-opacity-50">
+    <div class="alert alert-primary text-center" role="alert"><a class="alert-link">Nama Anggota Kelompok:</a> Faishal Fariz Hidaytullah | Resty Cahyani Pradita</div>
+    <div class="container mt-5 p-5 col-6 rounded">
+      <div class="shadow-lg p-3 bg-body-white bg-white rounded">
+        <h1 class="mb-4">Form A</h1>
+        <form class="mt-5" id="myForm" method="post">
+          <div class="mb-3">
+            <label for="numberInput" class="form-label">Jumlah elemen array:</label>
+            <input type="number" class="form-control" placeholder="Masukkan jumlah elemen array" id="numberInput" name="numberInput" min="1" required />
+          </div>
+          <div class="mb-3">
+            <label for="textInput" class="form-label">Teks:</label>
+            <input type="text" class="form-control" placeholder="Masukkan teks" id="textInput" name="textInput" required />
+          </div>
+          <div class="d-grid gap-2">
+            <button type="submit" class="btn btn-primary">Kirim</button>
+          </div>
+        </form>
+        <div id="tableContainer"></div>
+      </div>
     </div>
 
     <script>
