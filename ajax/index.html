@@ -49,8 +49,7 @@
             },
             dataType: "json",
             success: function (response) {
-              // Mengubah array JSON menjadi tabel HTML dan menampilkan dengan animasi
-              var table = '<table class="table"><caption>Tabel Hasil</caption><thead><tr><th>No.</th><th>Teks</th></tr></thead><tbody>';
+              var table = JSON.parse(JSON.stringify('<table class="table"><caption>Tabel Hasil</caption><thead><tr><th>No.</th><th>Teks</th></tr></thead><tbody>'));
               for (var i = 0; i < response.length; i++) {
                 table += "<tr><td>" + (i + 1) + "</td><td>" + response[i] + "</td></tr>";
               }
